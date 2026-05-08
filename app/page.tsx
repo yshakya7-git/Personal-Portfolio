@@ -10,6 +10,7 @@ import { Button } from "./components/Button";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Contact from "./contact/page";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,6 +19,7 @@ export default function Home() {
   const aboutRef = useRef(null);
   const serviceRef = useRef(null);
   const expRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -112,6 +114,10 @@ export default function Home() {
 
       <div id="experience" ref={expRef}>
         <Experience />
+      </div>
+
+       <div id="contact" ref={contactRef}>
+        <Contact />
       </div>
     </div>
   );

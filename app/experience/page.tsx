@@ -27,7 +27,7 @@ const experiences = [
 const careerData = [
   {
     id: 1,
-    date: "MAR 2024 - PRESENT",
+    date: "MAR 2025 - PRESENT",
     role: "Junior React Developer",
     company: "Channakya Software",
     location: "New Baneshwor",
@@ -37,7 +37,7 @@ const careerData = [
   },
   {
     id: 2,
-    date: "DEC 2023 - FEB 2024",
+    date: "DEC 2024 - FEB 2025",
     role: "Trainee",
     company: "Channakya Software",
     location: "Sinamangal",
