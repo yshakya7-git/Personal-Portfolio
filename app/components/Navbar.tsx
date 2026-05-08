@@ -10,7 +10,7 @@ import HamburgerIcon from "../icons/HamburgerIcon";
 const navItems = [
   { label: "Home", href: "#" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#service" },
+  { label: "Project", href: "#project" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
@@ -21,7 +21,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <section className="h-16 px-4 py-3 flex justify-between items-center bg-white shadow-sm relative z-50 dark:bg-black dark:border-b dark:border-gray-700">
+      <section className="sticky top-0 z-50 h-16 px-4 py-3 flex justify-between items-center bg-white/80 backdrop-blur-md shadow-sm dark:bg-black/80">
         <div className="flex gap-4 items-center">
           {/* <Logo width={25} height={25} /> */}
           <h1 className="font-bold text-lg text-secondary">Portfolio</h1>

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import banner from "../public/banner.jpg";
 import About from "./about/page";
-import Service from "./service/page";
 import Experience from "./experience/page";
 import { Button } from "./components/Button";
 
@@ -11,6 +10,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Contact from "./contact/page";
+import Project from "./project/page";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,7 +67,7 @@ export default function Home() {
     <div>
       <section
         ref={heroRef}
-        className="relative h-[600px] w-full overflow-hidden"
+        className="relative h-screen w-full overflow-hidden"
       >
         <Image
           src={banner}
@@ -104,19 +104,19 @@ export default function Home() {
         </div>
       </section>
 
-      <div id="/about" ref={aboutRef} className="scroll">
+      <div id="about" ref={aboutRef} className="scroll">
         <About />
       </div>
 
-      <div id="service" ref={serviceRef}>
-        <Service />
+      <div id="project" ref={serviceRef}>
+        <Project />
       </div>
 
       <div id="experience" ref={expRef}>
         <Experience />
       </div>
 
-       <div id="contact" ref={contactRef}>
+      <div id="contact" ref={contactRef}>
         <Contact />
       </div>
     </div>

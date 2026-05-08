@@ -80,11 +80,11 @@ const featuredProject = [
     ],
   },
 ];
-const Service = () => {
+const Project = () => {
   return (
     <div className="py-20 ">
       <div className="flex flex-col max-w-5xl mx-auto space-y-6">
-        <Titlebar title="Selected Works" content="Featured Projects" />
+        <Titlebar title="My Works" content="Featured Projects" />
 
         <div className="grid grid-cols-3 gap-8">
           {featuredProject &&
@@ -135,4 +135,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Project;
