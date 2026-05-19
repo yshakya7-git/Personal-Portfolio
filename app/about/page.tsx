@@ -5,6 +5,7 @@ import { TbApi, TbBrandFramerMotion, TbBrandTypescript } from "react-icons/tb";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { SiCodesignal } from "react-icons/si";
 import Titlebar from "../components/section-content/Titlebar";
+import { TechnicalProficiency } from "../components/section-content/TechnicalProficiency";
 
 const technicalProficiencyData = [
   {
@@ -55,16 +56,20 @@ const About = () => {
           />
 
           <p className="text-justify font-thin text-secondary-font">
-            I'm Yunika Shakya. I am a webdesigner and developer based in
-            Kathmandu, Nepal. I create lot of creative html templates and
-            wordpress themes. You can easily use those themes a single click for
-            a better user experience and an easier setup overall, simply add
-            your own content and images. No coding required, that’s a promise! I
-            believe that code is a tool for storytelling. For the past 5 years,
-            I've worked at the intersection of design and engineering, helping
-            startups turn complex ideas into intuitive digital interfaces. My
-            approach is rooted in structural clarity and a deep respect for user
-            experience.
+            I’m Yunika Shakya, a web designer and developer from Kathmandu,
+            Nepal. I build modern interfaces using React.js and Next.js, along
+            with clean HTML templates focused on simplicity, performance, and
+            great user experience. I enjoy turning ideas into functional and
+            visually engaging digital products that are easy to use and
+            maintain.<br></br> Over the past few years, I’ve worked on a variety
+            of projects ranging from landing pages and admin dashboards to fully
+            responsive web applications. My focus is always on writing clean,
+            reusable code and creating designs that feel intuitive and
+            accessible across all devices.<br></br> I believe good design is not just
+            about how it looks, but how it works. That’s why I pay close
+            attention to structure, usability, and performance in every project
+            I build. I continuously explore new technologies and best practices
+            to improve my workflow and deliver better digital experiences.
           </p>
 
           <div className="space-y-4">
@@ -89,22 +94,4 @@ const About = () => {
 
 export default About;
 
-export const TechnicalProficiency = ({
-  icon,
-  title,
-  className,
-}: {
-  icon?: React.ReactNode;
-  title: string;
-  className?: string;
-}) => {
-  return (
-    <div
-      className={`${className ? className : "bg-gray-200/90 border border-neutral  p-3 "} flex items-center gap-2 rounded-xs`}
-      key={title}
-    >
-      {icon}
-      <p className="text-sm text-secondary font-thin">{title}</p>
-    </div>
-  );
-};
+

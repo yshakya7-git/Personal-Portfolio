@@ -90,9 +90,8 @@ export default function Home() {
           </h1>
 
           <p className="max-w-xl text-gray-200 text-sm lg:text-lg">
-            I specialize in building high-performance web applications that
-            bridge the gap between complex engineering and sophisticated
-            minimalist design.
+            I build modern web apps using React and Next.js for fast, scalable,
+            and responsive experiences.”
           </p>
 
           <div className="flex gap-4 w-96">

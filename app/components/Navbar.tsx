@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { usePathname } from "next/navigation";
 import HamburgerIcon from "../icons/HamburgerIcon";
+import Image from "next/image";
+import logo from "../../public/logo.png";
 
 const navItems = [
   { label: "Home", href: "#" },
@@ -22,10 +24,7 @@ export const Navbar = () => {
   return (
     <>
       <section className="sticky top-0 z-50 h-16 px-4 py-3 flex justify-between items-center bg-white/80 backdrop-blur-md shadow-sm dark:bg-black/80">
-        <div className="flex gap-4 items-center">
-          {/* <Logo width={25} height={25} /> */}
-          <h1 className="font-bold text-lg text-secondary">Portfolio</h1>
-        </div>
+        <Image src={logo} alt="Logo" width={40} height={40} />
 
         <div className="hidden lg:flex gap-4">
           {navItems.map((item) => {
@@ -48,7 +47,9 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="px-4 py-1.5 bg-secondary text-white rounded-full text-sm">Hire Me</button>
+          <button className="px-4 py-1.5 bg-secondary text-white rounded-full text-sm">
+            Hire Me
+          </button>
 
           {/* Hamburger */}
           <button

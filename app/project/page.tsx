@@ -6,8 +6,8 @@ import salon from "../../public/salonImg.png";
 import fabulash from "../../public/fabulash.png";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { TechnicalProficiency } from "../about/page";
 import dms from "../../public/dms.jpg";
+import { TechnicalProficiency } from "../components/section-content/TechnicalProficiency";
 
 const featuredProject = [
   {
